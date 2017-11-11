@@ -141,63 +141,65 @@ The model was able to correctly guess 4 of the 8 traffic signs, which gives an a
 
 For the first image, the model is relatively sure that this is a stop sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities were
 
-| Probability         	                                                                 |     Prediction	        		| 
-|:---------------------:|:---------------------------------------------:| 
+|                          Probability         	                                         |     Prediction	        		| 
+|:--------------------------------------------------------------------------------------:|:---------------------------------------------:| 
      							
-[  1.00000000e+00,   0.00000000e+00,   0.00000000e+00, 0.00000000e+00,   0.00000000e+00] -- [12,  0,  1,  2,  3]
-[  5.28140783e-01,   4.71859187e-01,   2.13223839e-08, 5.50148060e-09,   1.69778878e-11] -- [37,  4, 31, 26,  8]
-[  1.00000000e+00,   4.29410907e-09,   1.52628680e-12, 5.76640894e-13,   2.48965643e-13] -- [16, 12, 11,  3,  6]
-[  1.00000000e+00,   4.59796546e-26,   5.72651716e-34, 0.00000000e+00,   0.00000000e+00] -- [11, 12, 40,  0,  1]
-[  1.00000000e+00,   2.13449137e-11,   4.80272181e-16, 4.61473021e-18,   4.61355065e-18] -- [38, 18, 11,  8, 20]
-[  1.00000000e+00,   0.00000000e+00,   0.00000000e+00, 0.00000000e+00,   0.00000000e+00] -- [18,  0,  1,  2,  3]
-[  1.00000000e+00,   1.20970040e-22,   3.15810050e-23, 8.00450771e-24,   6.41689274e-27] -- [ 9, 41, 16, 32,  3]
-[  1.00000000e+00,   0.00000000e+00,   0.00000000e+00, 0.00000000e+00,   0.00000000e+00] -- [12,  0,  1,  2,  3]
+|[  1.00000000e+00,   0.00000000e+00,   0.00000000e+00, 0.00000000e+00,   0.00000000e+00] | [12,  0,  1,  2,  3]|
+|[  5.28140783e-01,   4.71859187e-01,   2.13223839e-08, 5.50148060e-09,   1.69778878e-11] | [37,  4, 31, 26,  8]|
+|[  1.00000000e+00,   4.29410907e-09,   1.52628680e-12, 5.76640894e-13,   2.48965643e-13] | [16, 12, 11,  3,  6]|
+|[  1.00000000e+00,   4.59796546e-26,   5.72651716e-34, 0.00000000e+00,   0.00000000e+00] | [11, 12, 40,  0,  1]|
+|[  1.00000000e+00,   2.13449137e-11,   4.80272181e-16, 4.61473021e-18,   4.61355065e-18] | [38, 18, 11,  8, 20]|
+|[  1.00000000e+00,   0.00000000e+00,   0.00000000e+00, 0.00000000e+00,   0.00000000e+00] | [18,  0,  1,  2,  3]|
+|[  1.00000000e+00,   1.20970040e-22,   3.15810050e-23, 8.00450771e-24,   6.41689274e-27] | [ 9, 41, 16, 32,  3]|
+|[  1.00000000e+00,   0.00000000e+00,   0.00000000e+00, 0.00000000e+00,   0.00000000e+00] | [12,  0,  1,  2,  3]|
 
 The numbers represent unique class of traffic sign as follows
-ClassId,SignName
-0,Speed limit (20km/h)
-1,Speed limit (30km/h)
-2,Speed limit (50km/h)
-3,Speed limit (60km/h)
-4,Speed limit (70km/h)
-5,Speed limit (80km/h)
-6,End of speed limit (80km/h)
-7,Speed limit (100km/h)
-8,Speed limit (120km/h)
-9,No passing
-10,No passing for vehicles over 3.5 metric tons
-11,Right-of-way at the next intersection
-12,Priority road
-13,Yield
-14,Stop
-15,No vehicles
-16,Vehicles over 3.5 metric tons prohibited
-17,No entry
-18,General caution
-19,Dangerous curve to the left
-20,Dangerous curve to the right
-21,Double curve
-22,Bumpy road
-23,Slippery road
-24,Road narrows on the right
-25,Road work
-26,Traffic signals
-27,Pedestrians
-28,Children crossing
-29,Bicycles crossing
-30,Beware of ice/snow
-31,Wild animals crossing
-32,End of all speed and passing limits
-33,Turn right ahead
-34,Turn left ahead
-35,Ahead only
-36,Go straight or right
-37,Go straight or left
-38,Keep right
-39,Keep left
-40,Roundabout mandatory
-41,End of no passing
-42,End of no passing by vehicles over 3.5 metric tons
+| ClassId		        |     SignName	        					| 
+|:---------------------:|:---------------------------------------------:| 
+
+|0|Speed limit (20km/h)|
+|1|Speed limit (30km/h)|
+|2|Speed limit (50km/h)|
+|3|Speed limit (60km/h)|
+|4|Speed limit (70km/h)|
+|5|Speed limit (80km/h)|
+|6|End of speed limit (80km/h)|
+|7|Speed limit (100km/h)|
+|8|Speed limit (120km/h)|
+|9|No passing|
+|10|No passing for vehicles over 3.5 metric tons|
+|11|Right-of-way at the next intersection|
+|12|Priority road|
+|13|Yield|
+|14|Stop|
+|15|No vehicles|
+|16|Vehicles over 3.5 metric tons prohibited|
+|17|No entry|
+|18|General caution|
+|19|Dangerous curve to the left|
+|20|Dangerous curve to the right|
+|21|Double curve|
+|22|Bumpy road|
+|23|Slippery road|
+|24|Road narrows on the right|
+|25|Road work|
+|26|Traffic signals|
+|27|Pedestrians|
+|28|Children crossing|
+|29|Bicycles crossing|
+|30|Beware of ice/snow|
+|31|Wild animals crossing|
+|32|End of all speed and passing limits|
+|33|Turn right ahead|
+|34|Turn left ahead|
+|35|Ahead only|
+|36|Go straight or right|
+|37|Go straight or left|
+|38|Keep right|
+|39|Keep left|
+|40|Roundabout mandatory|
+|41|End of no passing|
+|42|End of no passing by vehicles over 3.5 metric tons|
 
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 ####1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
